@@ -1,4 +1,5 @@
 <script setup>
+import Weather from '@/Components/Weather.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
@@ -9,6 +10,7 @@ import { Head } from '@inertiajs/vue3';
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            
         </template>
 
         <div class="py-12">
@@ -19,4 +21,10 @@ import { Head } from '@inertiajs/vue3';
             </div>
         </div>
     </AuthenticatedLayout>
-</template>
+
+    <div>
+        <Weather />
+    </div>
+    
+</template>>
+
